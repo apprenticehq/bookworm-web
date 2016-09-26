@@ -1,4 +1,4 @@
-apprentice-web
+bookworm-web
 ===
 
 Getting Start
@@ -31,6 +31,6 @@ We use ESLint to remain our codes clean.
 # Lint your code. If your code is dirty, this command tells you.
 $ npm run lint
 
-# Lint your code. If that dirty code can fix with eslint, this command fix automatically.
+# Lint your code. If that dirty code can be fixed with eslint, this command fix automatically.
 $ npm run lint:fix
 ```

@@ -21,3 +21,16 @@ We use [`dotenv`](https://github.com/motdotla/dotenv). You have to create `.env`
 ```sh
 $ cp .env{.sample,}
 ```
+
+Development
+---
+
+We use ESLint to remain our codes clean.
+
+```sh
+# Lint your code. If your code is dirty, this command tells you.
+$ npm run lint
+
+# Lint your code. If that dirty code can fix with eslint, this command fix automatically.
+$ npm run lint:fix
+```

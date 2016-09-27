@@ -1,23 +1,48 @@
 // @flow
 
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import type { Map } from 'immutable';
+import type { Store } from 'flux/utils';
+import type Todo from './records/todo';
 
-class App extends Component {
-  render() {
+import React, { Component, Element } from 'react';
+import { Container } from 'flux/utils';
+import TodoStore from './stores/todos';
+import Header from './components/Header';
+import MainSection from './components/MainSection';
+import Footer from './components/Footer';
+
+type State = {
+  todos: Map<number, Todo>,
+  areAllComplete: boolean,
+};
+
+class TodoApp extends Component<void, void, State> {
+  static getStores(): Array<Store> {
+    return [TodoStore];
+  }
+
+  static calculateState(prevState: ?State): State {
+    return {
+      todos: TodoStore.getState(),
+      areAllComplete: TodoStore.areAllComplete(),
+    };
+  }
+
+  state: State;
+
+  render(): ?Element<*> {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Header />
+        <MainSection
+          todos={this.state.todos}
+          areAllComplete={this.state.areAllComplete}
+        />
+        <Footer todos={this.state.todos} />
       </div>
     );
   }
 }
 
-export default App;
+const TodoAppContainer = Container.create(TodoApp);
+export default TodoAppContainer;

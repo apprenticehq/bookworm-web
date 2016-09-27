@@ -101,6 +101,7 @@ module.exports = {
     'react/prefer-es6-class': 'error',
     'react/prop-types': 'error',
     'react/react-in-jsx-scope': 'error',
+    'react/require-render-return': 'error',
     'react/self-closing-comp': 'error',
     'react/sort-comp': 'error',
     'react/sort-prop-types': 'error',

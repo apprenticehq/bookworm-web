@@ -5,7 +5,7 @@ import { dispatch } from '../Dispatcher';
 import TextInput from './TextInput';
 
 export default class Header extends Component<void, any, void> {
-  handleSave(text: string): void {
+  handleSave = (text: string): void => {
     if (text.trim()) {
       dispatch({
         type: 'todo/create',

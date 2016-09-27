@@ -7,5 +7,5 @@ import './index.css';
 
 ReactDOM.render(
   <TodoAppContainer />,
-  document.getElementById('root')
+  document.getElementById('todoapp')
 );

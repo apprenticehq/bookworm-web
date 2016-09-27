@@ -15,7 +15,7 @@ export default class Footer extends Component<void, Props, void> {
     todos: PropTypes.instanceOf(Map),
   };
 
-  handleClearCompletedClick(): void {
+  handleClearCompletedClick = (): void => {
     dispatch({ type: 'todo/destroy-completed' });
   }
 

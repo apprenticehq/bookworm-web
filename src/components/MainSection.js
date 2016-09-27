@@ -18,7 +18,7 @@ export default class MainSection extends Component<void, Props, void> {
     todos: PropTypes.instanceOf(Map),
   }
 
-  handleChange(): void {
+  handleChange = (): void => {
     dispatch({ type: 'todo/toggle-complete-all' });
   }
 

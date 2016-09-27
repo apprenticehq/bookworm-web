@@ -70,6 +70,7 @@ module.exports = {
     // Disabled
     'strict': 'off',
     'no-case-declarations': 'off',
+    'no-use-before-define': 'off',
 
     // React
     // Error

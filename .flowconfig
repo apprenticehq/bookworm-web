@@ -1,0 +1,14 @@
+[ignore]
+.*/node_modules/.*
+.*/flow-typed/.*
+.*/src/interfaces/.*
+
+[include]
+
+[libs]
+./flow-typed/
+./src/interfaces/
+
+[options]
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable

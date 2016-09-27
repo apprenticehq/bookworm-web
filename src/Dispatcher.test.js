@@ -1,6 +1,5 @@
 import { Dispatcher } from 'flux';
 
-
 describe('Dispatcher', () => {
   let dispatcher;
   let callbackA;

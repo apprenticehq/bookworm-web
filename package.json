@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "dependencies": {
     "flux": "^2.1.1",
+    "immutable": "^3.8.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
@@ -20,11 +21,11 @@
     "css-loader": "0.25.0",
     "detect-port": "1.0.1",
     "dotenv": "2.0.0",
-    "eslint": "3.6.0",
+    "eslint": "^3.6.0",
     "eslint-config-react-app": "^0.2.1",
     "eslint-loader": "1.5.0",
-    "eslint-plugin-flowtype": "2.19.0",
-    "eslint-plugin-import": "1.16.0",
+    "eslint-plugin-flowtype": "^2.19.0",
+    "eslint-plugin-import": "^1.16.0",
     "eslint-plugin-jsx-a11y": "2.2.2",
     "eslint-plugin-react": "6.3.0",
     "extract-text-webpack-plugin": "1.0.1",

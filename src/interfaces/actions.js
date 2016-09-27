@@ -4,7 +4,7 @@ declare module 'actions' {
   declare type TodoAction =
     {
       type: 'todo/complete',
-      id: string,
+      id: number,
     } |
     {
       type: 'todo/create',
@@ -12,7 +12,7 @@ declare module 'actions' {
     } |
     {
       type: 'todo/destroy',
-      id: string,
+      id: number,
     } |
     {
       type: 'todo/destroy-compoeted',
@@ -22,11 +22,11 @@ declare module 'actions' {
     } |
     {
       type: 'todo/undo-complete',
-      id: string,
+      id: number,
     } |
     {
       type: 'todo/update-text',
-      id: string,
+      id: number,
       text: string,
     };
 }

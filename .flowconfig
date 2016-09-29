@@ -2,7 +2,6 @@
 .*/node_modules/fbjs/.*
 .*/node_modules/flux/flow/.*
 .*/flow-typed/.*
-.*/src/interfaces/.*
 
 [include]
 

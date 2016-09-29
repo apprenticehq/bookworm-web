@@ -1,6 +1,6 @@
 [ignore]
 .*/node_modules/fbjs/.*
-.*/node_modules/flux/flow/.*
+.*/node_modules/flux/lib/.*
 .*/flow-typed/.*
 
 [include]

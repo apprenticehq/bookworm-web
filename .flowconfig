@@ -1,0 +1,15 @@
+[ignore]
+.*/node_modules/fbjs/.*
+.*/node_modules/flux/lib/.*
+.*/flow-typed/.*
+
+[include]
+
+[libs]
+./flow-typed/
+./src/interfaces/
+
+[options]
+module.system.node.resolve_dirname=node_modules
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
